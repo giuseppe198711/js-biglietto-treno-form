@@ -12,11 +12,28 @@ H1 {
   color: #fff;
   text-align: center;
 }
-
+/* misto */
 .container {
   max-width: 1280px;
   padding: 20px;
   margin: auto;
+}
+
+.btn {
+  color: #B91450;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 3px;
+  background-color: lightgrey;
+  border-radius: 5px;
+  border: 1px solid #999;
+  cursor: pointer;
+  margin: 10px 10px 0px 10px;
+}
+
+.btn:hover {
+  background-color: grey;
+  color: #fff;
 }
 .row {
   display: flex;
@@ -29,11 +46,52 @@ H1 {
   text-align: center;
   margin: 0 20px;
 }
-
+/* dati imput */
 .dati-input {
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #333;
   padding: 20px;
   margin: 20px 0;
+}
+
+label {
+  color: #B91450;
+  margin-bottom: 15px;
+}
+
+input, select {
+  text-align: center;
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid #B91450;
+}
+
+input::placeholder {
+  text-align: center;
+  font-size: 15px;
+}
+
+input:focus, select:focus {
+  background-color: #B91450;
+  border: 1px solid #000;
+  color: #fff;
+}
+input:focus::placeholder {
+  color: #fff;
+}
+/* biglietto */
+.biglietto-container {
+  background-color: #fff;
+  padding: 20px;
+}
+.dati-biglietto {
+  display: flex;
+}
+.nome-biglietto {
+  background-color: grey;
+}
+
+.offerta-biglietto {
+  border-top: 1px solid grey;
 }
