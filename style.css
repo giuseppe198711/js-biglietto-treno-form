@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #B91450;
+}
+
+H1 {
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 20px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.dati-input {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #333;
+  padding: 20px;
+  margin: 20px 0;
+}
