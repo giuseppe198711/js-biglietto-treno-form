@@ -6,53 +6,59 @@
 
 body {
   background-color: #B91450;
+
 }
 
-H1 {
+h1, h2 {
   color: #fff;
   text-align: center;
+  font-size: 28px;
 }
 /* misto */
-.container {
-  max-width: 1280px;
+.page-wrapper {
+  max-width: 1180px;
   padding: 20px;
   margin: auto;
+  height: 100px;
 }
 
 .btn {
-  color: #B91450;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 3px;
+  padding: 4px;
+  margin: 0 20px;
   background-color: lightgrey;
-  border-radius: 5px;
-  border: 1px solid #999;
-  cursor: pointer;
-  margin: 10px 10px 0px 10px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #B91450;
 }
 
 .btn:hover {
-  background-color: grey;
   color: #fff;
+  background-color: grey;
+  cursor: pointer;
+
 }
+
 .row {
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .col {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin: 0 20px;
+  align-items: center;
+  margin: 0 30px;
 }
-/* dati imput */
-.dati-input {
+
+.data-input {
   background-color: #fff;
+  margin-top: 20px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px #333;
-  padding: 20px;
-  margin: 20px 0;
+  box-shadow: 2px 2px 5px #444;<option value="minorenen">Minorenne</option>
+
 }
 
 label {
@@ -60,11 +66,12 @@ label {
   margin-bottom: 15px;
 }
 
-input, select {
-  text-align: center;
-  border-radius: 5px;
+input select {
   height: 30px;
   border: 1px solid #B91450;
+  border-radius: 3px;
+  font-size: 15px;
+  text-align: center;
 }
 
 input::placeholder {
@@ -72,26 +79,43 @@ input::placeholder {
   font-size: 15px;
 }
 
-input:focus, select:focus {
+input:focus select:focus {
   background-color: #B91450;
-  border: 1px solid #000;
   color: #fff;
 }
-input:focus::placeholder {
+
+input:focus::placeholder{
   color: #fff;
 }
-/* biglietto */
-.biglietto-container {
+
+.display-none {
+  display: none;
+}
+
+.biglietto {
+  margin-top: 20px;
+}
+
+.biglietto-wrapper {
   background-color: #fff;
   padding: 20px;
 }
-.dati-biglietto {
+
+.dati {
   display: flex;
-}
-.nome-biglietto {
-  background-color: grey;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 
-.offerta-biglietto {
-  border-top: 1px solid grey;
-}
+.nome {
+  background-color: grey;
+  padding: 20px;
+  }
+
+  .offerta table th, offerta table td {
+    padding: 20px;
+  }
+
+  tbody {
+    text-align: center;
+  }

@@ -2,87 +2,85 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="stylesheet" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Biglietto treno con form</title>
   </head>
   <body>
     <!-- pagina contenitore -->
-    <div class="container">
+    <div class="page-wrapper">
       <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-      <!-- forma container -->
-      <div class="form-container">
-        <!-- dati input -->
-        <div class="dati-input">
-          <div class="row">
-            <div class="col">
-              <label for="nome">Nome e Cognome</label>
-              <input id="nome" type="text" placeholder="Inserisci il tuo nome">
-            </div>
-            <div class="col">
-              <label for="km">Km da percorrere</label>
-              <input id="km" type="text" placeholder="Inserisci i Km">
-            </div>
-            <div class="col">
-              <label for="età">Fascia d'età</label>
-              <select id="fascia-età" name="">
-              </select>
-
-            </div>
-
+      <!-- sezione dati input -->
+      <section class="data-input">
+        <div class="row">
+          <div class="col">
+            <label for="nome">Nome e Cognome</label>
+            <input id="nome" type="text" name="nome" placeholder="Inserisci il tuo nome">
           </div>
-          <div class="row">
-            <button id="genera" class="btn" type="button" name="genera">Genera</button>
-            <button id="annulla" class="btn" type="button" name="annulla">Annulla</button>
+          <div class="col">
+            <label for="km">Km da percorrere</label>
+            <input id="km" type="number" name="km" placeholder="Inserisci i km">
+          </div>
 
+          <div class="col">
+            <label for="fascia-eta">Fascia et&agrave;</label>
+            <select id="fascia-eta" name="fascia-eta">
+              <option value="minorenne">Minorenne</option>
+              <option value="maggiorenne">Maggiorenne</option>
+              <option value="over65">Over 65</option>
+
+
+            </select>
           </div>
 
         </div>
+        <div class="row">
+          <button id="genera" class="btn"type="button" name="button">Genera</button>
+          <button id="annulla" class="btn"type="button" name="button">Annulla</button>
+        </div>
 
-      </div>
-      <!-- /forma container -->
-      <!-- dati input -->
-      <h2>IL TUO BIGLIETTO</h2>
-      <!-- container biglietto -->
-
-      <div class="biglietto-container">
-        <h3>DETTAGLIO PASSEGGERO</h3>
-        <div class="dati-biglietto">
-          <div class="nome-biglietto">
-           <h3>NOME PASSEGGERO</h3>
-           <h4 id="nome-passeggero"></h4>
-          </div>
-
-          <div class="offerta-biglietto">
-            <table>
-              <thead>
-                <tr>
-                  <th>Offerta</th>
-                  <th>Carrozza</th>
-                  <th>Codice CP</th>
-                  <th>Costo biglietto</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
+      </section>
+      <!-- /sezione dati input -->
+      <!-- sezione biglietto -->
+      <section id="biglietto" class="biglietto display-none">
+        <h2>IL TUO BIGLIETTO</h2>
+        <div class="biglietto-wrapper">
+          <h3>DETTAGLIO PASSEGGERI</h3>
+          <div class="dati">
+            <div class="nome">
+              <h3>NOME PASSEGGERO</h3>
+              <h4 id="nome-passeggero"></h4>
+            </div>
+            <div class="offerta">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Offerta</th>
+                    <th>Carrozza</th>
+                    <th>Codice Cp</th>
+                    <th>Costo biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
                   <td id="offerta"></td>
                   <td id="carrozza"></td>
-                  <td id="codice-cp"></td>
-                  <td id="costo-biglietto"></td>
-                </tr>
-              </tbody>
-            </table>
-
+                  <td id="cp"></td>
+                  <td id="costo"></td>
+                </tbody>
+              </table>
+            </div>
           </div>
+
+
         </div>
 
-      </div>
-      <!-- /container biglietto -->
+      </section>
+      <!-- /sezione biglietto -->
+
 
     </div>
-  <!-- /  pagina container -->
-
-
-
+    <!-- pagina contenitore -->
 
 
     <script src="script.js" charset="utf-8"></script>
